@@ -15,7 +15,7 @@ public class HomeController {
         String email = token.getPrincipal().getAttribute("email");
         String role = token.getPrincipal().getAuthorities().iterator().next().getAuthority();
         String authorities = token.getAuthorities().toString();
-        System.out.println(name + " " + email + " " + role + " " + authorities);
+        System.out.println(name + ", " + email + ", " + role + ", " + authorities);
         return "Welcome to the OAuth2 Authorization Code Flow Example!" +
                " User: " + name +
                 " Email: " + email +
